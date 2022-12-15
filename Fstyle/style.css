@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.WebContainer{
+  width: 100%;
+  height: auto;
+}
+.articles{
+  width:80%; /*Takes 90% width from WebContainer*/
+  height: auto;
+  margin: auto;
+  padding-top: 80px;
+} 
+header {
+   position: sticky;
+   top: 0;
+   background-color: white;
+   z-index: 99;
+ }
+
+ul li{
+   margin-top: 15px;
+   margin-right: 20px;
+ display: inline-block;
+ line-height: 20px;
+ 
+ 
+}
+
+.lia{
+
+   text-decoration: none;
+   display: inline-block;
+margin-top: 20px;
+font-size: 20px;
+font-family: serif ;
+padding: 0 20px;
+color: rgb(92, 91, 91);
+position: relative;
+}
+.lia:after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: -10px;
+   left: 0;
+   background-color: #002e54;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+}
+.lia:hover:after{
+   transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.float{
+   float: right;
+   
+}
+.button1{
+   background-color: #4e5a65;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 9px 20px;
+  cursor: pointer;
+}
+.imgcenter{
+margin-bottom: 20px;
+}
+.imglogo{
+  padding: 0;
+}
+/* body */
+.boxSize{
+   max-width: 100%;
+   display: flex;
+   justify-content: space-around;
+  padding-bottom: 200px;
+}
+h2{
+  font-size: 70px;
+  color: #4e5a65;
+  text-align: left;
+}
+.text{
+  font-size: 20px;
+  color:#4e5a65 ;
+  text-align: left;
+  word-spacing: 3px;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+.body-number{
+  
+  text-decoration: none;
+  color: #748a9e;
+  font-size: 30px;
+}
+
+.contMon{
+   height: 300px; 
+   background-color: white;
+   width: 500px;
+  margin-left: auto;
+   margin-right: auto;
+}
+
+.body-img{
+
+}
+.section-2{
+  max-width: 100%;
+  height: 100px;
+  background-color: #4e5a65;
+  display: flex;
+}
+/* slide show */
+.slideshow-container {
+   max-width: 100%;
+   position: relative;
+   margin: auto;
+   
+ }
+ 
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+ 
+
+ 
+ /* The dots/bullets/indicators */
+ .dot {
+   
+   transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover {
+   background-color: #717171;
+ }
+ 
+ /* Fading animation */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ 
+ @-webkit-keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+ }
+ 
+ @keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+ }
+ 
+ /* On smaller screens, decrease text size */
+ @media only screen and (max-width: 300px) {
+   .prev, .next,.text {font-size: 11px}
+ }
+ /* image hover effect */
+ .container {
+   position: relative;
+   
+ }
+ 
+ .image {
+   opacity: 1;
+   display: block;
+   width: 100%;
+   height: auto;
+   transition: .5s ease;
+   backface-visibility: hidden;
+  
+ }
+ 
+ .middle {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+   background-color: #4e5a65;
+   padding: 40px;
+   width: 500px;
+letter-spacing: 0px;
+  height: auto;
+  flex-wrap: wrap;
+ }
+ 
+ .container:hover .image {
+   opacity: 0.3;
+ }
+ 
+ .container:hover .middle {
+   opacity: 1;
+ }
+ .middle-title{
+   color: white;
+   font-size: 70px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   text-align: left;
+   background-color: #4e5a65;
+   padding: 10px;
+   padding-bottom: 30px;
+ }
+ .middle-subheader{
+    color: white;
+    background-color: #4e5a65;
+    font-size: 30px;
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 30px;
+   
+ }
+ .middle-text{
+    color: white;
+    background-color: #4e5a65;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 30px;
+    line-height: 25px;
+ }
+ .middle-button{
+   background-color: white;
+   border: none;
+   color: #4e5a65;
+   padding: 12px 150px;
+   border-radius: 4px;
+   display: inline-block;
+   font-size: 20px;
+   cursor: pointer;
+ }
+ /* rectangle */
+  .about-rect{
+      position: relative;
+      top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #4e5a65;
+    height: 350px;
+  }
+  .about-button{
+    color: #4e5a65;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 60px;
+    width: 550px;
+    position: relative;
+    bottom: -240px;
+    right: 550px;
+    border: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding: 20px;
+  }
+  .about-p{
+    color: white;
+    position: relative;
+    bottom: -135px;
+    left: -200px;
+    text-align: center;
+    font-size: 40px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+  }
+  .about-number{
+    color: white;
+    position: relative;
+    bottom: -245px;
+    left: -950px;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+  .rect-img{
+      position: relative;
+      top: 40px;
+      left: 400px;
+  }
+ /* Footer */
+ #footer{
+  
+  background-color:#4e5a65;
+  height: 700px;
+  width: 100%;
+  clear: both;
+}
+.footer-box{
+  width: 320px;
+   display: flex;
+  margin-left: 10%;
+  position: absolute;
+  top: 2500px;
+ 
+}
+.footer-box-middle{
+  width: 350px;
+  display: flex;
+  position: absolute;
+  top: 2450px;
+  left: 500px;
+  padding: 20px;
+}
+.vertical-menu{
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 40px;
+  padding-top: 30px;
+}
+.footer-title{
+font-size: 28px;
+color: white;
+text-align: left;
+position: absolute;
+top: 0px;
+ letter-spacing: 2px;
+}
+.footer-p{
+font-size: 18px;
+color: white;
+text-align: left;
+position: absolute;
+top: 50px;
+word-spacing: 5px;
+line-height: 27px;
+}
+.footer-box-middle{
+  width: 320px;
+  display: flex;
+  position: absolute;
+  top: 2500px;
+  left: 500px;
+
+}
+.footer-box-left{
+  width: 350px;
+  display: flex;
+  position: absolute;
+  top: 2500px;
+  right: 200px;
+}
+.footer-bottom{
+  width: 80%;
+  height: 70px;
+  display: block;
+  position: absolute;
+  top: 2950px;
+  left: 150px;
+
+}
+.footer-bottom-p{
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+.footer-bottom-p2{
+  padding-top: 40px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+.wrapper {
+
+  min-height: 100%;
+  height: auto ;
+  height: 100%;
+  margin: 0 auto -700; /* the bottom margin is the negative value of the footer's height */
+}
+.push {
+  height: 700; /* .push must be the same height as .footer */
+}
